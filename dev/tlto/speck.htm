@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+	<head>
+		<title>Speck</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="speck.css">
+		<script type="text/javascript" src="speck.js"></script>
+	</head>
+	<body onload="initSpeck(256, 256, 176);">
+		<h1>Speck</h1>
+		<p>A ham, traditionally from the Alto Adige region of northern Italy, that is boned,
+		cured and smoked. A rare example of a salumi that is both cured and smoked,
+		and reflects the influence of Eastern European tradition on Italian cuisine.</p>
+		<div id="cor_outer" class="outer">
+			<div id="cor_v_line" class="v_line"></div>
+			<div id="cor_h_line" class="h_line"></div>
+			<div id="cor_box" class="box" style="width: 256px; height: 176px">
+				<img src="slices_coronal.png" id="cor_slices" class="slices">
+			</div>
+		</div>
+		<div id="sag_outer" class="outer">
+			<div id="sag_v_line" class="v_line"></div>
+			<div id="sag_h_line" class="h_line"></div>
+			<div id="sag_box" class="box" style="width: 256px; height: 176px">
+				<img src="slices_sagittal.png" id="sag_slices" class="slices">
+			</div>
+		</div>
+		<div id="tra_outer" class="outer">
+			<div id="tra_v_line" class="v_line"></div>
+			<div id="tra_h_line" class="h_line"></div>
+			<div id="tra_box" class="box" style="width: 256px; height: 256px">
+				<img src="slices_transverse.png" id="tra_slices" class="slices">
+			</div>
+		</div>
+		<div style="clear:both"></div>
+		<p id="info">Crosshair coordinates:</p>
+	</body>
+</html>
+

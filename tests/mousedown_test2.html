@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+
+	
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+		<title>PIP Ticker</title>
+		<script id="jquery" type="text/javascript" src="mousedown_test_files/jquery.js"></script>
+		<script type="text/javascript" src="mousedown_test_files/stepper.js"></script>
+		<script type="text/javascript" src="mousedown_test_files/mousehold.js"></script>
+		<script type="text/javascript" charset="utf-8">		
+			running = true;
+			$(function(){
+				$('div.pipTicker').each(function(){
+					var pipDiv = this;
+					$('a', pipDiv).each(function(){
+						var href = $(this).href()
+						$(this).mousehold(function(i) {
+							var pip = parseFloat($('input#pip').val())
+							var hrefPip = parseFloat(href.match(/spin=([\-0-9\.]+)/)[1])
+							
+							var dp = parseInt($('input#dp').val())
+							
+							if (hrefPip < 0) pip *= -1
+							if (!pip) pip = hrefPip
+														
+							var s = new stepper(pip, dp)
+/*							console.log("hit number", i)*/
+							var v = parseFloat($('input', pipDiv).val())
+							$('input', pipDiv).val(s.step(v))
+						})
+					})
+				})
+				
+				$('div.pipTicker a').click(function(){ return false })
+			})
+		</script>
+		<style type="text/css" media="screen">
+			A.spinner {
+				text-decoration: none;
+				cursor: pointer;
+				padding: 0 10px;
+			}
+			A.spinner:hover {
+				text-decoration: underline;
+			}
+			LABEL {
+				width: 200px;
+			}
+		</style>
+	</head><body>
+		<div><label for="pip">Pip:</label>
+			<input name="pip" value="0.025" id="pip" type="text">
+		</div>
+		<div><label for="dp">DP:</label>
+			<input name="dp" value="3" id="dp" type="text">
+		</div>
+		
+		<div class="pipTicker">
+		<div>
+		<label for="ctlVal">Trading Value:</label>
+			<input name="some_name" class="number" value="0.725" id="ctlVal" type="text"> 
+		<a class="spinner" href="http://leftlogic.com/jquery/pip_ticker.html?spin=-0.025">&lt;</a>
+		<a class="spinner" href="http://leftlogic.com/jquery/pip_ticker.html?spin=0.025">&gt;</a>
+		</div>
+		</div>
+	</body></html>

@@ -1,0 +1,97 @@
+<style type="text/css">
+
+body {
+    #background-color: #F0E9E0;
+    font-family: Palatino, Verdana, Times New Roman, Helvetica, sans-serif;
+}
+.logogram {
+    font-family: Palatino, Verdana, Times New Roman, Helvetica, sans-serif;
+    font-size: 24px;
+    color:    #000000;
+    position: absolute;
+	top:      40px;
+	left:     120px;
+}
+.logogram_acronym {
+    font-family: Palatino, Verdana, Times New Roman, Helvetica, sans-serif;
+	font-size: 14px;
+	color:    #000000;
+	position: absolute;
+	top:      48px;
+	left:     290px;
+}						
+div.banner {
+	position: absolute;
+	left:     30px;
+	top:      20px;
+	width:    800px;
+}
+div.intro {
+	position: 	absolute;
+}
+div.main {
+	position: 	absolute;
+}
+div.caption{
+	position: 	relative;
+    left:     	0;
+    top:      	0;
+    font-size:	80%;
+ 	color:		dddddd;
+}
+div.slice_container {
+	position: relative;
+	float:    left;
+    overflow: hidden;
+	border-style:solid; #ridge;
+}
+img {
+	position: absolute;
+    left:     0;
+    top:      0;
+}
+#mouse{
+    position:  absolute;
+    top:		1px;
+    right:		6px;
+ 	color:		dddddd;
+	font-size: 	80%;
+}
+#click{
+    position:  absolute;
+    top:    	4px;
+    right:      6px;
+	font-size: 	80%;
+}
+#mark{
+    position:  absolute;
+    bottom:    0px;
+    left:      0px;
+	font-size: 80%;
+}
+a:link {
+	color: #0066CC;
+	text-decoration:none;
+}
+a.link {
+	font-size: 70%;
+}
+a:visited {
+color: #9900CC;
+	text-decoration:none;
+}
+a:hover {
+	color: #CC00FF;
+	text-decoration:none;
+}
+a:active {
+	color: #CC00CC;
+	text-decoration:none;
+}
+tr, td, img {
+	#padding: 0;
+	#margin: 0;
+	#border: 0;
+}
+
+</style>

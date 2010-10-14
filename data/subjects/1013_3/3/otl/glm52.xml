@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+
+<OutlineFile>
+
+<NVMImageInfo>
+  <NVMImageSizeCR>512 512</NVMImageSizeCR>
+  <NVMImageCenterRXZY>0.000000 0.000000 0.000000</NVMImageCenterRXZY>
+  <NVMImageVoxSizeXZY>0.000000 0.000000 0.000000</NVMImageVoxSizeXZY>
+  <NVMImageScaleXZY>0.000000 0.000000 0.000000</NVMImageScaleXZY>
+  <NVMImageRotationsXZY>0.000000 0.000000 0.000000</NVMImageRotationsXZY>
+</NVMImageInfo>
+
+<OutlineList>
+
+<Outline>
+  <Type>EXTRACTED</Type>
+  <Label>Left Cerebral Exterior</Label>
+  <NumEnclosedPixels>301</NumEnclosedPixels>
+  <NumberOfSeeds>1</NumberOfSeeds>
+  <Seed>
+    212 267
+  </Seed>
+  <NumberOfPoints>66</NumberOfPoints>
+  <PointsCR>
+    212 266
+    211 265
+    210 265
+    210 264
+    209 263
+    208 263
+    207 263
+    206 263
+    205 264
+    204 264
+    203 265
+    202 266
+    202 267
+    201 268
+    200 269
+    200 270
+    200 271
+    200 272
+    200 273
+    200 274
+    200 275
+    200 276
+    200 277
+    200 278
+    201 279
+    201 280
+    201 281
+    202 282
+    203 282
+    204 283
+    205 283
+    206 284
+    207 284
+    208 284
+    209 284
+    210 284
+    211 284
+    212 285
+    213 285
+    214 285
+    215 285
+    216 285
+    217 285
+    218 285
+    219 285
+    220 284
+    221 284
+    222 283
+    222 282
+    221 281
+    221 280
+    220 279
+    220 278
+    219 277
+    218 276
+    218 275
+    218 274
+    217 273
+    216 272
+    216 271
+    216 270
+    215 269
+    214 269
+    214 268
+    213 267
+    212 266
+  </PointsCR>
+</Outline>
+<Outline>
+  <Type>EXTRACTED</Type>
+  <Label>Left Cerebral Exterior</Label>
+  <NumEnclosedPixels>18</NumEnclosedPixels>
+  <NumberOfSeeds>1</NumberOfSeeds>
+  <Seed>
+    212 290
+  </Seed>
+  <NumberOfPoints>20</NumberOfPoints>
+  <PointsCR>
+    212 289
+    211 289
+    210 289
+    209 289
+    208 290
+    209 291
+    210 292
+    211 293
+    212 293
+    213 293
+    214 293
+    215 293
+    216 293
+    217 292
+    217 291
+    216 290
+    215 290
+    214 290
+    213 289
+    212 289
+  </PointsCR>
+</Outline>
+<Outline>
+  <Type>EXTRACTED</Type>
+  <Label>Left OCP   occipital pole</Label>
+  <NumEnclosedPixels>301</NumEnclosedPixels>
+  <NumberOfSeeds>1</NumberOfSeeds>
+  <Seed>
+    214 270
+  </Seed>
+  <NumberOfPoints>66</NumberOfPoints>
+  <PointsCR>
+    214 269
+    214 268
+    213 267
+    212 266
+    211 265
+    210 265
+    210 264
+    209 263
+    208 263
+    207 263
+    206 263
+    205 264
+    204 264
+    203 265
+    202 266
+    202 267
+    201 268
+    200 269
+    200 270
+    200 271
+    200 272
+    200 273
+    200 274
+    200 275
+    200 276
+    200 277
+    200 278
+    201 279
+    201 280
+    201 281
+    202 282
+    203 282
+    204 283
+    205 283
+    206 284
+    207 284
+    208 284
+    209 284
+    210 284
+    211 284
+    212 285
+    213 285
+    214 285
+    215 285
+    216 285
+    217 285
+    218 285
+    219 285
+    220 284
+    221 284
+    222 283
+    222 282
+    221 281
+    221 280
+    220 279
+    220 278
+    219 277
+    218 276
+    218 275
+    218 274
+    217 273
+    216 272
+    216 271
+    216 270
+    215 269
+    214 269
+  </PointsCR>
+</Outline>
+<Outline>
+  <Type>EXTRACTED</Type>
+  <Label>Left OCP   occipital pole</Label>
+  <NumEnclosedPixels>18</NumEnclosedPixels>
+  <NumberOfSeeds>1</NumberOfSeeds>
+  <Seed>
+    214 291
+  </Seed>
+  <NumberOfPoints>20</NumberOfPoints>
+  <PointsCR>
+    214 290
+    213 289
+    212 289
+    211 289
+    210 289
+    209 289
+    208 290
+    209 291
+    210 292
+    211 293
+    212 293
+    213 293
+    214 293
+    215 293
+    216 293
+    217 292
+    217 291
+    216 290
+    215 290
+    214 290
+  </PointsCR>
+</Outline>
+
+</OutlineList>
+
+</OutlineFile>
+

@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type="text/javascript" src="http://www.braincolor.org/openlabels/scripts/jquery.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+   $("#special").click(function(e){
+      $('#status2').html(e.pageX +', '+ e.pageY);
+   });
+})
+</script>
+<body>
+
+<h2 id="status2">
+0, 0
+</h2>
+<div style="width: 100px; height: 100px; background:#ccc;" id="special">
+Click me anywhere!
+</div>
+</body>
+</html>
