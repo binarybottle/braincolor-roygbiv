@@ -20,7 +20,7 @@
                  
                  Please visit:
 
-                 http://www.braincolor.org/openlabels/roygbiv_dev/index.php?admin=1&ID=".$ID."&sag0=".$sag0."&cor0=".$cor0."&hor0=".$hor0."&name=".$mail_name."&email=".$mail_email."&comment=".$mail_comment;
+                 http://www.braincolor.org/roygbiv/index.php?admin=1&ID=".$ID."&sag0=".$sag0."&cor0=".$cor0."&hor0=".$hor0."&name=".$mail_name."&email=".$mail_email."&comment=".$mail_comment;
                  
       if (!mail($mail_to, $mail_subject, $mail_body, $mail_from)) {
         echo 'Notification message delivery failed. Please contact info[at]braincolor.org.';

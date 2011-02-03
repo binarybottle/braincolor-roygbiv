@@ -16,7 +16,7 @@ Parse label XML file:
 </Label>
 ...
 
-Parse slice label contour XML files 
+Parse slice contour XML label files 
 to extract Javascript-ready polygons:
 
 <OutlineFile>
