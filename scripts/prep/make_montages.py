@@ -12,6 +12,10 @@ python make_montages.py ../../data/subjects/1013_3/3/NIFTI/1013_3_glm_LPI.nii.gz
 Inspired by the Peter Skomoroch's website:
 http://www.datawrangling.com/python-montage-code-for-displaying-arrays
 
+1013: 144,194,151 -> 14
+1003: 141,186,158 -> 14
+1002: 136,200,169 -> 15
+
 (c) MIT license 2010, arno klein . arno@mindboggle.info
 """
 
@@ -26,33 +30,33 @@ from nibabel import load
 in_file  = sys.argv[1]
 out_path = sys.argv[2]
 graymap  = int(sys.argv[3]) # 1 if yes, 0 if no (color index labels)
+nimages_montagedim1 = int(sys.argv[4]) # number of images (vertical)
+nimages_montagedim2 = int(sys.argv[5]) # number of images (horizontal)
 
 def montage(I,vertical=0): 
-	dim1,dim2,dim3      = shape(I)
-	nimages_montagedim1 = int(sys.argv[4])
-	nimages_montagedim2 = int(sys.argv[5])
-	M = zeros((nimages_montagedim1 * dim1, nimages_montagedim2 * dim2))
-	
-	count = 0
-	# switch i2 and i1 for loops to have the slice sequence 
-	# progress vertically rather than horizontally:
-	if vertical:
-		for i1 in range(nimages_montagedim1):
-			for i2 in range(nimages_montagedim2):
-				if count >= dim3: 
-					break
-				slice1, slice2 = i1 * dim1, i2 * dim2
-				M[ slice1 : slice1+dim1, slice2 : slice2+dim2 ] = I[:, :, count]
-				count += 1
-	else:
-		for i2 in range(nimages_montagedim2):
-			for i1 in range(nimages_montagedim1):
-				if count >= dim3: 
-					break
-				slice1, slice2 = i1 * dim1, i2 * dim2
-				M[ slice1 : slice1+dim1, slice2 : slice2+dim2 ] = I[:, :, count]
-				count += 1
-	return M
+    dim1,dim2,dim3 = shape(I)
+    M = zeros((nimages_montagedim1 * dim1, nimages_montagedim2 * dim2))
+    
+    count = 0
+    # switch i2 and i1 for loops to have the slice sequence 
+    # progress vertically rather than horizontally:
+    if vertical:
+        for i1 in range(nimages_montagedim1):
+            for i2 in range(nimages_montagedim2):
+                if count >= dim3: 
+                    break
+                slice1, slice2 = i1 * dim1, i2 * dim2
+                M[ slice1 : slice1+dim1, slice2 : slice2+dim2 ] = I[:, :, count]
+                count += 1
+    else:
+        for i2 in range(nimages_montagedim2):
+            for i1 in range(nimages_montagedim1):
+                if count >= dim3: 
+                    break
+                slice1, slice2 = i1 * dim1, i2 * dim2
+                M[ slice1 : slice1+dim1, slice2 : slice2+dim2 ] = I[:, :, count]
+                count += 1
+    return M
 
 
 nif  = load(in_file)
@@ -73,34 +77,34 @@ if len(sys.argv) > 6:
 """
         
 for iaxis in range(1,4):
-	
-	out_file = out_path + '_axis' + str(iaxis) + '.png'
+    
+    out_file = out_path + '_axis' + str(iaxis) + '.png'
 
-	plt.gray()
-	
-	# horizontal:
-	if iaxis == 3:
-		M = montage(data[::-1,:,:],0)
-		if graymap:
-			imsave(out_file, flipud(rot90(M)), cmap=cm.gist_gray)
-		else:
-			imsave(out_file, flipud(rot90(M)), vmax=255)
-		
-	# coronal:
-	elif iaxis == 2:
-		data_copy = swapaxes(data.copy(), 1, 2)
-		data_copy = data_copy[::-1,::-1,::-1]
-		M = montage(data_copy,0)
-		if graymap:
-			imsave(out_file, fliplr(rot90(M,-1)), cmap=cm.gist_gray)
-		else:
-			imsave(out_file, fliplr(rot90(M,-1)), vmax=255)
-		
-	# sagittal:
-	elif iaxis == 1:
-		data_copy = swapaxes(data.copy(), 0, 2)
-		M = montage(data_copy,1)
-		if graymap:
-			imsave(out_file, fliplr(flipud(M)), cmap=cm.gist_gray)
-		else:
-			imsave(out_file, fliplr(flipud(M)), vmax=255)
+    plt.gray()
+    
+    # horizontal:
+    if iaxis == 3:
+        M = montage(data[::-1,:,:],0)
+        if graymap:
+            imsave(out_file, flipud(rot90(M)), cmap=cm.gist_gray)
+        else:
+            imsave(out_file, flipud(rot90(M)), vmax=255)
+        
+    # coronal:
+    elif iaxis == 2:
+        data_copy = swapaxes(data.copy(), 1, 2)
+        data_copy = data_copy[::-1,::-1,::-1]
+        M = montage(data_copy,0)
+        if graymap:
+            imsave(out_file, fliplr(rot90(M,-1)), cmap=cm.gist_gray)
+        else:
+            imsave(out_file, fliplr(rot90(M,-1)), vmax=255)
+        
+    # sagittal:
+    elif iaxis == 1:
+        data_copy = swapaxes(data.copy(), 0, 2)
+        M = montage(data_copy,1)
+        if graymap:
+            imsave(out_file, fliplr(flipud(M)), cmap=cm.gist_gray)
+        else:
+            imsave(out_file, fliplr(flipud(M)), vmax=255)
