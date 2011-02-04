@@ -1,14 +1,14 @@
-#!/usr/bin/env pythonw
-# encoding: utf-8
 """
 Create a .png montage from an LPI image volume for slices along each axis.
+
+Inputs:  LPI image volume
 (LPI: x: left-to-right, y: posterior-to-anterior, z: inferior-to-superior)
+Arguments:  input file, output directory, gray=1/color=0, number dim1, number dim2
 
-Example (grayscale):
-python make_montages.py ../../data/subjects/1013_3/3/NIFTI/1013_3_LPI.nii.gz ../../montages/1013_3 1 16 16 0 255 27 282 0 255
+Example (grayscale): 
+python make_montages.py ../../data/subjects/1013_3/3/NIFTI/1013_3_LPI.nii.gz ../../montages/1013_3 1 16 16
 Example (labels):
-python make_montages.py ../../data/subjects/1013_3/3/NIFTI/1013_3_glm_LPI.nii.gz ../../montages/1013_3_labels 0 16 16 0 255 27 282 0 255
-
+python make_montages.py ../../data/subjects/1013_3/3/NIFTI/1013_3_glm_LPI.nii.gz ../../montages/1013_3_labels 0 16 16
 Inspired by the Peter Skomoroch's website:
 http://www.datawrangling.com/python-montage-code-for-displaying-arrays
 
@@ -58,6 +58,7 @@ def montage(I,vertical=0):
 nif  = load(in_file)
 data = nif.get_data()
 
+"""
 # Crop data (in opposite directions: RAS)
 if len(sys.argv) > 6:
     start1 = int(sys.argv[6])  # sagittal
@@ -69,6 +70,7 @@ if len(sys.argv) > 6:
     if sum([start1,start2,start3,stop1,stop2,stop3]) > 0:
       print("Cropping...")
       data = data[start1:stop1+1,start2:stop2+1,start3:stop3+1]
+"""
         
 for iaxis in range(1,4):
 	
