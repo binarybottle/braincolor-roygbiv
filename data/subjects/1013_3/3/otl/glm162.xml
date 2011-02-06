@@ -14,83 +14,6 @@
 
 <Outline>
   <Type>EXTRACTED</Type>
-  <Label>Left optic chiasm</Label>
-  <NumEnclosedPixels>132</NumEnclosedPixels>
-  <NumberOfSeeds>1</NumberOfSeeds>
-  <Seed>
-    208 290
-  </Seed>
-  <NumberOfPoints>65</NumberOfPoints>
-  <PointsCR>
-    208 289
-    207 289
-    206 289
-    205 289
-    204 289
-    203 290
-    202 290
-    201 290
-    200 290
-    199 290
-    198 290
-    197 289
-    196 288
-    195 287
-    194 286
-    193 286
-    192 286
-    191 286
-    190 286
-    189 286
-    188 287
-    187 287
-    186 287
-    185 288
-    185 289
-    185 290
-    185 291
-    186 292
-    187 292
-    188 292
-    189 292
-    190 292
-    191 292
-    192 293
-    193 293
-    194 293
-    195 293
-    196 293
-    197 293
-    198 294
-    199 294
-    200 294
-    200 295
-    201 296
-    202 295
-    203 295
-    204 295
-    205 295
-    206 296
-    207 296
-    208 297
-    209 297
-    210 297
-    211 297
-    212 296
-    213 296
-    214 295
-    214 294
-    213 293
-    212 292
-    212 291
-    211 290
-    210 290
-    209 289
-    208 289
-  </PointsCR>
-</Outline>
-<Outline>
-  <Type>EXTRACTED</Type>
   <Label>3rd Ventricle</Label>
   <NumEnclosedPixels>66</NumEnclosedPixels>
   <NumberOfSeeds>1</NumberOfSeeds>
@@ -7889,6 +7812,101 @@
     108 295
     107 294
     106 294
+  </PointsCR>
+</Outline>
+<Outline>
+  <Type>EXTRACTED</Type>
+  <Label>Left optic chiasm</Label>
+  <NumEnclosedPixels>66</NumEnclosedPixels>
+  <NumberOfSeeds>1</NumberOfSeeds>
+  <Seed>
+    209 290
+  </Seed>
+  <NumberOfPoints>35</NumberOfPoints>
+  <PointsCR>
+    209 289
+    208 289
+    207 289
+    206 289
+    205 289
+    204 289
+    203 290
+    202 290
+    201 290
+    200 291
+    200 292
+    200 293
+    200 294
+    200 295
+    201 296
+    202 295
+    203 295
+    204 295
+    205 295
+    206 296
+    207 296
+    208 297
+    209 297
+    210 297
+    211 297
+    212 296
+    213 296
+    214 295
+    214 294
+    213 293
+    212 292
+    212 291
+    211 290
+    210 290
+    209 289
+  </PointsCR>
+</Outline>
+<Outline>
+  <Type>EXTRACTED</Type>
+  <Label>Right optic chiasm</Label>
+  <NumEnclosedPixels>63</NumEnclosedPixels>
+  <NumberOfSeeds>1</NumberOfSeeds>
+  <Seed>
+    192 287
+  </Seed>
+  <NumberOfPoints>36</NumberOfPoints>
+  <PointsCR>
+    192 286
+    191 286
+    190 286
+    189 286
+    188 287
+    187 287
+    186 287
+    185 288
+    185 289
+    185 290
+    185 291
+    186 292
+    187 292
+    188 292
+    189 292
+    190 292
+    191 292
+    192 293
+    193 293
+    194 293
+    195 293
+    196 293
+    197 293
+    198 294
+    199 294
+    200 293
+    200 292
+    200 291
+    199 290
+    198 290
+    197 289
+    196 288
+    195 287
+    194 286
+    193 286
+    192 286
   </PointsCR>
 </Outline>
 

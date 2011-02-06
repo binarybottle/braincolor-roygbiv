@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+
+<OutlineFile>
+
+<NVMImageInfo>
+  <NVMImageSizeCR>512 512</NVMImageSizeCR>
+  <NVMImageCenterRXZY>0.000000 0.000000 0.000000</NVMImageCenterRXZY>
+  <NVMImageVoxSizeXZY>0.000000 0.000000 0.000000</NVMImageVoxSizeXZY>
+  <NVMImageScaleXZY>0.000000 0.000000 0.000000</NVMImageScaleXZY>
+  <NVMImageRotationsXZY>0.000000 0.000000 0.000000</NVMImageRotationsXZY>
+</NVMImageInfo>
+
+<OutlineList>
+
+<Outline>
+  <Type>EXTRACTED</Type>
+  <Label>Right FRP   frontal pole</Label>
+  <NumEnclosedPixels>178</NumEnclosedPixels>
+  <NumberOfSeeds>1</NumberOfSeeds>
+  <Seed>
+    183 244
+  </Seed>
+  <NumberOfPoints>55</NumberOfPoints>
+  <PointsCR>
+    183 243
+    183 242
+    182 241
+    182 240
+    181 239
+    180 239
+    179 239
+    178 239
+    177 239
+    176 239
+    175 240
+    174 241
+    173 242
+    173 243
+    174 244
+    175 245
+    176 246
+    176 247
+    177 248
+    177 249
+    176 250
+    176 251
+    175 252
+    175 253
+    176 254
+    177 254
+    177 255
+    178 256
+    179 256
+    180 256
+    181 256
+    182 256
+    183 256
+    184 256
+    185 256
+    186 256
+    187 256
+    188 256
+    189 256
+    190 255
+    190 254
+    191 253
+    191 252
+    191 251
+    191 250
+    190 249
+    190 248
+    189 247
+    188 247
+    188 246
+    187 245
+    186 245
+    185 244
+    184 244
+    183 243
+  </PointsCR>
+</Outline>
+
+</OutlineList>
+
+</OutlineFile>
+

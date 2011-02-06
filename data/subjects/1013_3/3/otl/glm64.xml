@@ -3844,6 +3844,159 @@
     256 229
   </PointsCR>
 </Outline>
+<Outline>
+  <Type>EXTRACTED</Type>
+  <Label>Left Calc  calcarine cortex</Label>
+  <NumEnclosedPixels>33</NumEnclosedPixels>
+  <NumberOfSeeds>1</NumberOfSeeds>
+  <Seed>
+    204 274
+  </Seed>
+  <NumberOfPoints>25</NumberOfPoints>
+  <PointsCR>
+    204 273
+    203 274
+    202 274
+    201 275
+    200 275
+    199 276
+    198 276
+    197 277
+    197 278
+    197 279
+    198 280
+    199 280
+    200 280
+    201 280
+    202 280
+    203 279
+    204 279
+    205 279
+    206 278
+    206 277
+    206 276
+    206 275
+    206 274
+    205 273
+    204 273
+  </PointsCR>
+</Outline>
+<Outline>
+  <Type>EXTRACTED</Type>
+  <Label>Left Calc  calcarine cortex</Label>
+  <NumEnclosedPixels>57</NumEnclosedPixels>
+  <NumberOfSeeds>1</NumberOfSeeds>
+  <Seed>
+    200 269
+  </Seed>
+  <NumberOfPoints>33</NumberOfPoints>
+  <PointsCR>
+    200 268
+    199 269
+    198 269
+    197 269
+    196 269
+    195 270
+    195 271
+    194 272
+    194 273
+    193 274
+    192 275
+    192 276
+    191 277
+    192 278
+    193 278
+    194 278
+    195 277
+    196 277
+    197 276
+    198 276
+    199 275
+    200 275
+    201 274
+    202 274
+    203 273
+    204 273
+    205 272
+    205 271
+    204 270
+    203 269
+    202 269
+    201 268
+    200 268
+  </PointsCR>
+</Outline>
+<Outline>
+  <Type>EXTRACTED</Type>
+  <Label>Right Calc  calcarine cortex</Label>
+  <NumEnclosedPixels>32</NumEnclosedPixels>
+  <NumberOfSeeds>1</NumberOfSeeds>
+  <Seed>
+    182 251
+  </Seed>
+  <NumberOfPoints>26</NumberOfPoints>
+  <PointsCR>
+    182 250
+    181 249
+    180 249
+    179 248
+    178 248
+    177 249
+    177 250
+    178 251
+    178 252
+    179 253
+    180 254
+    181 255
+    182 256
+    183 256
+    184 256
+    185 256
+    186 256
+    187 256
+    188 255
+    187 254
+    186 254
+    186 253
+    185 252
+    184 252
+    183 251
+    182 250
+  </PointsCR>
+</Outline>
+<Outline>
+  <Type>EXTRACTED</Type>
+  <Label>Right Calc  calcarine cortex</Label>
+  <NumEnclosedPixels>20</NumEnclosedPixels>
+  <NumberOfSeeds>1</NumberOfSeeds>
+  <Seed>
+    178 253
+  </Seed>
+  <NumberOfPoints>21</NumberOfPoints>
+  <PointsCR>
+    178 252
+    178 251
+    177 250
+    176 250
+    175 251
+    175 252
+    175 253
+    175 254
+    176 255
+    177 256
+    178 256
+    179 257
+    180 257
+    181 258
+    182 258
+    183 257
+    182 256
+    181 255
+    180 254
+    179 253
+    178 252
+  </PointsCR>
+</Outline>
 
 </OutlineList>
 

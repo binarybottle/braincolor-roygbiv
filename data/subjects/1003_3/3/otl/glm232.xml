@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<OutlineFile>
+
+<OutlineList>
+
+<Outline>
+  <Type>EXTRACTED</Type>
+  <Label>Left FRP   frontal pole</Label>
+  <NumEnclosedPixels>16</NumEnclosedPixels>
+  <NumberOfSeeds>1</NumberOfSeeds>
+  <Seed>
+    231 213
+  </Seed>
+  <NumberOfPoints>16</NumberOfPoints>
+  <PointsCR>
+    231 212
+    230 212
+    229 213
+    229 214
+    228 215
+    228 216
+    228 217
+    229 218
+    230 218
+    231 218
+    232 217
+    233 216
+    233 215
+    233 214
+    232 213
+    231 212
+  </PointsCR>
+</Outline>
+
+</OutlineList>
+
+</OutlineFile>
+

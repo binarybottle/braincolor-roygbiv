@@ -8,6 +8,7 @@
      <div id="cor_main_caption" style="text-indent:6px"><b>Move mouse/cursor over regions to see text labels</b> &nbsp;&nbsp;(brain <?php echo $ID; ?>)
      </div>
     </div>
+    <?php echo '<font color="red">xdim_main='.$xdim_main.'</font>'; ?>
     <div class="slice_container"
      style="width:  <?php echo $xdim_main; ?>px;
      height:        <?php echo $zdim_main; ?>px;

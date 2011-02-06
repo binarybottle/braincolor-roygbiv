@@ -9292,7 +9292,7 @@
 </Outline>
 <Outline>
   <Type>EXTRACTED</Type>
-  <Label>Right MPoG  postcentral gyrus, medial segment</Label>
+  <Label>Right MPoG  postcentral gyrus medial segment</Label>
   <NumEnclosedPixels>449</NumEnclosedPixels>
   <NumberOfSeeds>1</NumberOfSeeds>
   <Seed>
@@ -9435,7 +9435,7 @@
 </Outline>
 <Outline>
   <Type>EXTRACTED</Type>
-  <Label>Left MPrG  precentral gyrus, medial segment</Label>
+  <Label>Left MPrG  precentral gyrus medial segment</Label>
   <NumEnclosedPixels>714</NumEnclosedPixels>
   <NumberOfSeeds>1</NumberOfSeeds>
   <Seed>

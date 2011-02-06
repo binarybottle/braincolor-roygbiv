@@ -4505,7 +4505,7 @@
 </Outline>
 <Outline>
   <Type>EXTRACTED</Type>
-  <Label>Right MSFG  superior frontal gyrus, medial segment</Label>
+  <Label>Right MSFG  superior frontal gyrus medial segment</Label>
   <NumEnclosedPixels>619</NumEnclosedPixels>
   <NumberOfSeeds>1</NumberOfSeeds>
   <Seed>
@@ -4690,7 +4690,7 @@
 </Outline>
 <Outline>
   <Type>EXTRACTED</Type>
-  <Label>Left MSFG  superior frontal gyrus, medial segment</Label>
+  <Label>Left MSFG  superior frontal gyrus medial segment</Label>
   <NumEnclosedPixels>483</NumEnclosedPixels>
   <NumberOfSeeds>1</NumberOfSeeds>
   <Seed>

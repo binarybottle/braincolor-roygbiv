@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<LandmarkList>
+<Landmark>
+  <Name>AC_POINT</Name>
+  <RGBColor>255 255 0</RGBColor>
+  <XZYLocation> 71.50 138.50 146.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>Anterior</Name>
+  <RGBColor>0 255 255</RGBColor>
+  <XZYLocation> 71.50 138.50 235.50</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>Inferior</Name>
+  <RGBColor>0 255 255</RGBColor>
+  <XZYLocation> 72.50 209.50 103.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>Left</Name>
+  <RGBColor>0 255 255</RGBColor>
+  <XZYLocation>155.00 139.00 116.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>MAX_CROP</Name>
+  <RGBColor>255 255 0</RGBColor>
+  <XZYLocation>138.50 212.50 224.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>MID_SAGITTAL_POINT</Name>
+  <RGBColor>255 255 0</RGBColor>
+  <XZYLocation> 69.50  77.50 143.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>MIN_CROP</Name>
+  <RGBColor>255 255 0</RGBColor>
+  <XZYLocation>  3.50  44.50  25.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>PC_POINT</Name>
+  <RGBColor>255 255 0</RGBColor>
+  <XZYLocation> 72.00 138.50 116.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>Posterior</Name>
+  <RGBColor>0 255 255</RGBColor>
+  <XZYLocation> 71.50 138.50  18.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>Right</Name>
+  <RGBColor>0 255 255</RGBColor>
+  <XZYLocation>  0.00 138.50 116.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>Superior</Name>
+  <RGBColor>0 255 255</RGBColor>
+  <XZYLocation> 71.50  38.50 116.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>calc-ant</Name>
+  <RGBColor>255 0 255</RGBColor>
+  <XZYLocation> -1.00  -1.00  -1.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>calc-post</Name>
+  <RGBColor>255 0 255</RGBColor>
+  <XZYLocation> -1.00  -1.00  -1.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>cos-ant</Name>
+  <RGBColor>255 0 255</RGBColor>
+  <XZYLocation> -1.00  -1.00  -1.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>cs-med</Name>
+  <RGBColor>255 0 255</RGBColor>
+  <XZYLocation> -1.00  -1.00  -1.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>genu-post</Name>
+  <RGBColor>255 0 255</RGBColor>
+  <XZYLocation> -1.00  -1.00  -1.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>hip-ant</Name>
+  <RGBColor>255 0 255</RGBColor>
+  <XZYLocation> -1.00  -1.00  -1.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>ifs-ant</Name>
+  <RGBColor>255 0 255</RGBColor>
+  <XZYLocation> -1.00  -1.00  -1.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>mhos-ant</Name>
+  <RGBColor>255 0 255</RGBColor>
+  <XZYLocation> -1.00  -1.00  -1.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>occ-ant</Name>
+  <RGBColor>255 0 255</RGBColor>
+  <XZYLocation> -1.00  -1.00  -1.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>ots-ant</Name>
+  <RGBColor>255 0 255</RGBColor>
+  <XZYLocation> -1.00  -1.00  -1.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>pocs-lat</Name>
+  <RGBColor>255 0 255</RGBColor>
+  <XZYLocation> -1.00  -1.00  -1.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>pos-ant</Name>
+  <RGBColor>255 0 255</RGBColor>
+  <XZYLocation> -1.00  -1.00  -1.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>prcs-lat</Name>
+  <RGBColor>255 0 255</RGBColor>
+  <XZYLocation> -1.00  -1.00  -1.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>prcs-med</Name>
+  <RGBColor>255 0 255</RGBColor>
+  <XZYLocation> -1.00  -1.00  -1.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>splen-ant</Name>
+  <RGBColor>255 0 255</RGBColor>
+  <XZYLocation> -1.00  -1.00  -1.00</XZYLocation>
+</Landmark>
+<Landmark>
+  <Name>tf-jnct</Name>
+  <RGBColor>255 0 255</RGBColor>
+  <XZYLocation> -1.00  -1.00  -1.00</XZYLocation>
+</Landmark>
+</LandmarkList>

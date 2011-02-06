@@ -15,7 +15,7 @@
 <Outline>
   <Type>EXTRACTED</Type>
   <Label>Left Cerebral Exterior</Label>
-  <NumEnclosedPixels>11284</NumEnclosedPixels>
+  <NumEnclosedPixels>0</NumEnclosedPixels>
   <NumberOfSeeds>1</NumberOfSeeds>
   <Seed>
     227 169
@@ -3558,7 +3558,7 @@
 <Outline>
   <Type>EXTRACTED</Type>
   <Label>Right ACgG  anterior cingulate gyrus</Label>
-  <NumEnclosedPixels>331</NumEnclosedPixels>
+  <NumEnclosedPixels>0</NumEnclosedPixels>
   <NumberOfSeeds>1</NumberOfSeeds>
   <Seed>
     192 194
@@ -5454,7 +5454,7 @@
 </Outline>
 <Outline>
   <Type>EXTRACTED</Type>
-  <Label>Left MSFG  superior frontal gyrus, medial segment</Label>
+  <Label>Left MSFG  superior frontal gyrus medial segment</Label>
   <NumEnclosedPixels>462</NumEnclosedPixels>
   <NumberOfSeeds>1</NumberOfSeeds>
   <Seed>
@@ -5600,7 +5600,7 @@
 </Outline>
 <Outline>
   <Type>EXTRACTED</Type>
-  <Label>Right MSFG  superior frontal gyrus, medial segment</Label>
+  <Label>Right MSFG  superior frontal gyrus medial segment</Label>
   <NumEnclosedPixels>365</NumEnclosedPixels>
   <NumberOfSeeds>1</NumberOfSeeds>
   <Seed>

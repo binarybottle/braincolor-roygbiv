@@ -1,19 +1,8 @@
   <?php 
-  // image montages
-  $path_montages = 'montages/';
-  $path_contours = 'contours/';
-  $montage_cor = '_axis2_1x.jpg';
-  $montage_sag = '_axis1_1x.jpg';
-  $montage_hor = '_axis3_1x.jpg';
-  $montage_cor_main = '_axis2_2x.jpg';
-  $labels_montage = 1;
-  if ($labels_montage) {
-    $montage_labels_cor = '_labels_colors_axis2.png';
-    $montage_labels_sag = '_labels_colors_axis1.png';
-    $montage_labels_hor = '_labels_colors_axis3.png';
-    $montage_labels_cor_main = '_labels_colors_axis2_2x.png';
-  }
 
+  //--------------//
+  //   SETTINGS   //
+  //--------------//
   // image dimensions used to construct montages
   if (empty($ID)) { 
     include_once "../../db/roygbiv_db.php";
@@ -44,7 +33,42 @@
   }
   $xdim_main = $xdim * 2;
   $zdim_main = $zdim * 2;
+  ?>
+  <script type="text/javascript">
+  var contour_path = 'contours/1013_3/'; //<!--?php echo $path_contours.$ID.'/'; ?-->;
+  // number of images along the edge of the montage for each axis
+  var nimages_x_montagedim1 = 16;
+  var nimages_x_montagedim2 = 16;
+  var nimages_y_montagedim1 = 16;
+  var nimages_y_montagedim2 = 16;
+  var nimages_z_montagedim1 = 16;
+  var nimages_z_montagedim2 = 16;
+  var labels_montage = <?php echo $labels_montage; ?>;
+  </script>
+  <?php
+  echo '<font color="red">xdim_main='.$xdim_main.'</font>';
 
+  //------//
+  // DATA //
+  //------//
+  // paths and file names for image montages
+  $path_montages = 'montages/';
+  $path_contours = 'contours/';
+  $montage_cor = '_axis2_1x.jpg';
+  $montage_sag = '_axis1_1x.jpg';
+  $montage_hor = '_axis3_1x.jpg';
+  $montage_cor_main = '_axis2_2x.jpg';
+  $labels_montage = 1;
+  if ($labels_montage) {
+    $montage_labels_cor = '_labels_colors_axis2.png';
+    $montage_labels_sag = '_labels_colors_axis1.png';
+    $montage_labels_hor = '_labels_colors_axis3.png';
+    $montage_labels_cor_main = '_labels_colors_axis2_2x.png';
+  }
+
+  //--------------//
+  // PRESENTATION //
+  //--------------//
   // individual slice presentation
   $border_width  = 3;    // slice border width
   $margin_right  = 3;    // margin between slices
@@ -64,7 +88,12 @@
   $caption_height = 15;
   $slider_top     = 60;
   ?>
-  
+
+  <!-----------------
+  //-----------------//
+  // JavaScript vars //
+  //-----------------// 
+    ----------------->
   <script type="text/javascript">
   var contour_path = 'contours/1013_3/'; //<!--?php echo $path_contours.$ID.'/'; ?-->;
   // image dimensions (from php variables above)
@@ -76,14 +105,6 @@
   var cor0  = <?php echo $cor0; ?>; // initial coronal slice
   var sag0  = <?php echo $sag0; ?>; // initial sagittal slice
   var hor0  = <?php echo $hor0; ?>; // initial horizontal slice
-  // number of images along the edge of the montage for each axis
-  var nimages_x_montagedim1 = 16;
-  var nimages_x_montagedim2 = 16;
-  var nimages_y_montagedim1 = 16;
-  var nimages_y_montagedim2 = 16;
-  var nimages_z_montagedim1 = 16;
-  var nimages_z_montagedim2 = 16;
-  var labels_montage = <?php echo $labels_montage; ?>;
   // individual slice presentation
   var mark_slices = 1;
   var mark_all_slices = 1;
