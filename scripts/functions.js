@@ -1,6 +1,5 @@
 // (c) 2010 arno klein . arno@mindboggle.info . http://www.braincolor.org (MIT license)
 
-
 // IMAGE MAP HIGHLIGHTS
 $(function() {
   $('.map').maphilight();
@@ -10,6 +9,9 @@ $(function() {
 function load_contours(elem, input_slice) {
   var url = contour_path + "slice" + input_slice + ".html";
   $(elem).load(url);
+  // $(document).ready(function() {
+  //   alert("url="+url)
+  // }); 
 }
 
 // LOAD LABEL NAMES
@@ -148,13 +150,14 @@ function click_slice(elem, offsetX2, offsetY2, icor, isag, ihor) {
 } 
 
 // SLIDER
+// NOTE: not working: "value: opacity0,"
 $(function() {
   $("#slider").slider({
     orientation: "horizontal",
     range: "min",
     min: 0,
     max: 100,
-    value: opacity0,
+    value: 50,
     slide: function(event, ui) {
       $("#opacity").val(ui.value);
       $('#labels_cor_main').css('opacity',$("#slider").slider("value") / 100);     

@@ -10,8 +10,8 @@
       $mail_email   = preg_replace('/\s+/','+',$email);
       $mail_comment = preg_replace('/\s+/','+',$comment);
       $mail_to      = 'arno@braincolor.org';
-		  $mail_from    = 'From: roygbiv@braincolor.org';
-		  $mail_subject = 'ROYGBIV feedback';
+      $mail_from    = 'From: roygbiv@braincolor.org';
+      $mail_subject = 'ROYGBIV feedback';
       $mail_body    = "
 
                  New ROYGBIV comment:

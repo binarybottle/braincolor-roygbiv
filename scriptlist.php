@@ -14,3 +14,4 @@
   <link rel="stylesheet" type="text/css" href="./css/jquery.ui.slider.css" />
   <link rel="stylesheet" type="text/css" href="./css/jquery.ui.theme.css" />
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <link rel="stylesheet" type="text/css" href="http://www.braincolor.org/shared/style.css"> 

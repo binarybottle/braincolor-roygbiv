@@ -6,52 +6,38 @@ $(document).ready(function() {
   images_cor = document.getElementById("images_cor");
   images_sag = document.getElementById("images_sag");
   images_hor = document.getElementById("images_hor");
+
   if (labels_montage) {
     labels_cor = document.getElementById("labels_cor");
     labels_sag = document.getElementById("labels_sag");
     labels_hor = document.getElementById("labels_hor");
   } 
+
   // Initial update of slices
   cor = update_cor(cor0);
   sag = update_sag(sag0);
-  hor = update_hor(hor0);           
+  hor = update_hor(hor0);
 
   // MARK ALL SLICES
   if (mark_all_slices) {
     mark_all_slices_draw();
   }
 
-  // MOUSE CLICKS
+  // MOUSE CLICKS and MOUSE COORDINATES
   var offsetMain = 2*border_width + xdim_main + margin_right;
   var offsetX2 = offsetMain + border_width;
   var offsetY2 = caption_height + border_width;
-    click_slice("#slice_cor", offsetX2, offsetY2, 0, 1, 2);
-    
+  click_slice("#slice_cor", offsetX2, offsetY2, 0, 1, 2);
+  mouse_slice("#slice_cor","#mouse_cor","#mouse_sag","#mouse_hor",offsetX2,offsetY2);
   var offsetX2 = offsetMain + 3*border_width + xdim + margin_right;
   var offsetY2 = caption_height + border_width;
   click_slice("#slice_sag", offsetX2, offsetY2, 1, 0, 2);
-    
+  mouse_slice("#slice_sag","#mouse_sag","#mouse_cor","#mouse_hor",offsetX2,offsetY2);
   var offsetX2 = offsetMain + border_width;
   var offsetY2 = 2*caption_height + 3*border_width + zdim + margin_bottom;
   click_slice("#slice_hor", offsetX2, offsetY2, 2, 1, 0);
+  mouse_slice("#slice_hor","#mouse_hor","#mouse_cor","#mouse_sag",offsetX2,offsetY2);
 
-  // MOUSE COORDINATES
-  if(show_mouse_coordinates) {
-
-    var offsetX2 = offsetMain + border_width;
-    var offsetY2 = caption_height + border_width;
-      mouse_slice("#slice_cor","#mouse_cor","#mouse_sag","#mouse_hor",offsetX2,offsetY2);
-      
-    var offsetX2 = offsetMain + 3*border_width + xdim + margin_right;
-    var offsetY2 = caption_height + border_width;
-    mouse_slice("#slice_sag","#mouse_sag","#mouse_cor","#mouse_hor",offsetX2,offsetY2);
-      
-    var offsetX2 = offsetMain + border_width;
-    var offsetY2 = 2*caption_height + 3*border_width + zdim + margin_bottom;
-    mouse_slice("#slice_hor","#mouse_hor","#mouse_cor","#mouse_sag",offsetX2,offsetY2);
-    
-  }
-  
   // ARROW ICON CLICKS
   click_arrow("#cor_backward",-1);
   click_arrow("#cor_forward",1);
@@ -65,14 +51,6 @@ $(document).ready(function() {
 // KEY PRESSES
 $(document).keypress(function (e) {
 
-    /* Testing: 
-  // 32 = activate when pressing the spacebar:
-  if (e.keyCode == 32 || e.charCode == 32){     
-    var url = contour_path + "slice" + cor + ".html";
-    $('#contour_data').load(url, function(data) {
-      alert("Data Loaded: " + url); //data);
-    });
-  } */  
   // 49  1 = coronal backward
   if (e.keyCode == 49 || e.charCode == 49){
     cor = update_cor(cor - 1);  
@@ -104,7 +82,5 @@ $(document).keypress(function (e) {
       mark_all_slices_erase();      
       mark_all_slices_draw();     
     }
-  }   
-}); 
-  
-
+  }
+});

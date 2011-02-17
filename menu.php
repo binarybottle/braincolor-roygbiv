@@ -1,5 +1,4 @@
 <?php
-// include_once "./shared/db.php";
  include_once "../../db/roygbiv_db.php";
  $table_name = 'images'; 
 ?>

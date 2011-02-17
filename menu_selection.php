@@ -9,15 +9,15 @@
    $max_crop_y = $row->max_crop_y;
    $max_crop_z = $row->max_crop_z;
    /*
-   $midsagittal_x = $row->midsagittal_x;
-   $midsagittal_y = $row->midsagittal_y;
-   $midsagittal_z = $row->midsagittal_z;
-   $AC_x = $row->AC_x;
-   $AC_y = $row->AC_y;
-   $AC_z = $row->AC_z;
-   $PC_x = $row->PC_x;
-   $PC_y = $row->PC_y;
-   $PC_z = $row->PC_z;
-   */
+$midsagittal_x = $row->midsagittal_x;
+$midsagittal_y = $row->midsagittal_y;
+$midsagittal_z = $row->midsagittal_z;
+$AC_x = $row->AC_x;
+$AC_y = $row->AC_y;
+$AC_z = $row->AC_z;
+$PC_x = $row->PC_x;
+$PC_y = $row->PC_y;
+$PC_z = $row->PC_z;
+*/
  }
 ?>
