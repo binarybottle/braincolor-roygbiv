@@ -2,17 +2,21 @@
 Create a .png montage from an LPI brain image volume for slices along each axis.
 Optionally replace intensities with RGB values from an XML file.
 
-Inputs:  LPI brain image volume
+First, orient the image volume to be LPI.
 (LPI: x: left-to-right, y: posterior-to-anterior, z: inferior-to-superior)
+One can do this using the Advanced Normalization Tools (ANTs) from UPenn:
+  PermuteFlipImageOrientationAxes 3 image.nii.gz image2.nii.gz 0 2 1 1 0 1
+  CopyImageHeaderInformation image.nii.gz image2.nii.gz image2.nii.gz 1 1 1
+
 Arguments:  <input file> <output stem> <0 or 1 (relabel with XML)> <opt: XML>
 
 Example montage from (0-255) images: 
-python step1_make_montages.py ../data/subjects/1013/3/NIFTI/LPI/1013.nii.gz ../montages/1013 0
+python step1_make_montages.py ../data/subjects/1002/3/NIFTI/LPI/1002.nii.gz ../montages/1002 0
 
 Example montage from labeled images:
-python step1_make_montages.py ../data/subjects/1013/3/NIFTI/LPI/1013_glm.nii.gz \
-       ../montages/1013_glm 1 \
-       ../data/subjects/1013/3/NIFTI/1013_3_glm_LabelMap.xml
+python step1_make_montages.py ../data/subjects/1002/3/NIFTI/LPI/1002_glm.nii.gz \
+       ../montages/1002_glm 1 \
+       ../data/subjects/1002/3/NIFTI/1002_3_glm_LabelMap.xml
 
 (c) MIT license 2010, arno klein . arno@mindboggle.info
 """
