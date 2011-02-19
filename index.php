@@ -61,23 +61,23 @@ if ($test_jquery) {
 
      <!-- MENU and SLIDER -->
      </br>
-     <table>
+     <table border="0" cellspacing="0" cellpadding="0">
       <tr>
-       <td valign="bottom">
-        <?php //include("menu.php"); ?>
-       </td>
-       <td valign="top">
+       <td valign="top" align="center">
         <label for="opacity"></label>
         <input type="text" id="opacity" style="border:0; font-size:9pt; width:50px; text-align:right"; /><font size="2">% label opacity:&nbsp;&nbsp;</font>
        </td>
-       <td valign="middle">
+       <td valign="middle" align="center">
         <div class="slider" id="slider" style="color:#000000; width:<?php echo $slider_width; ?>px"></div>
        </td>
       </tr>
+      <tr>
+       <td align="center" colspan="2">
+        <br />
+        <?php include("menu.php"); ?>
+       </td>
+      </tr>
      </table>
-
-     <!-- SLICE LABELS -->
-     <div id="label_names"></div>
 
    </td>
    <td style="vertical-align:top;" align="left">
@@ -115,6 +115,10 @@ if ($test_jquery) {
    </td>
   </tr>
  </table>
+
+ <!-- SLICE LABELS -->
+ <br />
+ <div id="label_names"></div>
 
  </div>
 </body>

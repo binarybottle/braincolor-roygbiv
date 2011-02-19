@@ -77,9 +77,9 @@
 
   ?>
   <script type="text/javascript">
-  //-----------------//
-  // JavaScript vars //
-  //-----------------// 
+  //----------------------//
+  // JavaScript variables //
+  //----------------------// 
   // image dimensions (from php variables above)
   var xdim_main = <?php echo $xdim_main; ?>; 
   var zdim_main = <?php echo $zdim_main; ?>; 

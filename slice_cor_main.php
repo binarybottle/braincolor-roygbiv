@@ -16,6 +16,9 @@
       ?>
      </div>
      <!-- Transparent image to map contours on top -->
-     <img src="./images/blank_cor_512x512.png" class="map" usemap="#contour_map" border=0>
+     <img src="./images/blank_cor_512x512.png" class="map" usemap="#contour_map" 
+      border=2
+      style="width: <?php echo $xdim_main; ?>px;
+             height: <?php echo $zdim_main; ?>px;">
      <div id="contour_data"></div>
     </div>

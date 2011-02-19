@@ -5,8 +5,8 @@ and create arrays (map images) for image mouseover highlights.
 Example:
 python make_contour_map.py ../data/subjects/1002/3/NIFTI/1002_3_glm_LabelMap.xml \
                            ../data/subjects/1002/3/otl/ ../contours/1002/ \
-                           ../contours/1002/labels.php 0 -20 0 1 512
-
+                           ./contours/1002/labels.php 0 -20 0 1 512
+3.5 	44.5 	25 	138.5 	212.5 	224
 
 Parse label XML file:
 
@@ -69,7 +69,7 @@ from convert_colors import RGBToHTMLColor
 in_xml_labels = sys.argv[1]  # Ex: "../data/subjects/1002/3/NIFTI/1002_3_glm_LabelMap.xml"
 path_contours = sys.argv[2]  # Ex: "../data/subjects/1002/3/otl/"
 out_path      = sys.argv[3]  # Ex: "../contours/1002/"
-full_label_list_link = sys.argv[4]  # Ex: "../contours/1002/labels.php"
+full_label_list_link = sys.argv[4]  # Ex: "./contours/1002/labels.php"
 xdiff = int(sys.argv[5])  # sagittal offset:   add to contour x values
 ydiff = int(sys.argv[6])  # coronal offset:    add to contour slice numbers
 zdiff = int(sys.argv[7])  # horizontal offset: add to contour z values
@@ -109,6 +109,7 @@ dirList = os.listdir(path_contours)
 max_count = 0
 for fname in dirList:
     if ".xml" in fname and "Landmark" not in fname:
+
         slicenumber = ''.join(i for i in fname if i.isdigit())
         newslicenumber = str( int(slicenumber) + ydiff )
         
@@ -192,7 +193,6 @@ for fname in dirList:
        
         fcontours.write("</map>")
         fcontours.close()
-        
         flabels.write('</script>')
         flabels.write('<b>Coronal slice ' + newslicenumber + ' labels</b> ')
         flabels.write('(<a href="'+full_label_list_link+'" onClick="return popup('+full_label_list_link+')">full label list</a>):<br />')

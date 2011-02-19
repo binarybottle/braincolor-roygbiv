@@ -45,7 +45,7 @@ make directory for coronal contour and label information
 mkdir ../contours/1002
 
 --------------------------------------------------------------------------------
-make_label_file.py  (calls convert_colors.py)
+make_label_files.py  (calls convert_colors.py)
 --------------------------------------------------------------------------------
 Extract label information from XML file and create a label array and list.
 
