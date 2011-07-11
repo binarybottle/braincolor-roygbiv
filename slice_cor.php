@@ -25,8 +25,10 @@
      <img id="images_cor" src="<?php echo $path_montages.$ID.$montage_cor; ?>">
      <?php 
       if ($labels_montage) {
+        echo '<span class="labels_cor">';
         echo '<img src="'.$path_montages.$ID.$montage_labels_cor.'" ';
         echo 'id="labels_cor" style="opacity:'.$opacity0.'">';
+        echo '</span>';
       }
      ?>
     </div>

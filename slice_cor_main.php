@@ -10,15 +10,14 @@
       
       <?php 
       if ($labels_montage) {
+        echo '<span class="labels_cor_main">';
         echo '<img src="'.$path_montages.$ID.$montage_labels_cor_main.'" ';
         echo 'id="labels_cor_main" style="opacity:'.$opacity0.'">';
+        echo '</span>';
       }
       ?>
      </div>
      <!-- Transparent image to map contours on top -->
-     <img src="./images/blank_cor_512x512.png" class="map" usemap="#contour_map" 
-      border=2
-      style="width: <?php echo $xdim_main; ?>px;
-             height: <?php echo $zdim_main; ?>px;">
+     <img src="./images/blank_cor_512x512.png" class="map" usemap="#contour_map" border=0>
      <div id="contour_data"></div>
     </div>

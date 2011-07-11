@@ -14,7 +14,7 @@ Parse label XML file:
 </Label>
 ...
 
-(c) 2010 arno klein . arno@mindboggle.info . http://www.braincolor.org (MIT license)
+(c) 2011 arno klein . arno@mindboggle.info . http://www.braincolor.org (MIT license)
 """
 
 import sys

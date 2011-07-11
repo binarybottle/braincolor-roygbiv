@@ -149,6 +149,18 @@ function click_slice(elem, offsetX2, offsetY2, icor, isag, ihor) {
   })
 } 
 
+// BUTTON
+$(function() {
+  $("button").click(function () {
+    $("span.labels_button").toggle();
+    $("#labels_cor_main").toggle();
+    $("#labels_cor").toggle();
+    $("#labels_hor").toggle();
+    $("#labels_sag").toggle();
+  });
+});
+
+/*
 // SLIDER
 // NOTE: not working: "value: opacity0,"
 $(function() {
@@ -168,3 +180,4 @@ $(function() {
   });
   $("#opacity").val($("#slider").slider("value"));
 });
+*/

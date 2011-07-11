@@ -11,20 +11,20 @@ One can do this using the Advanced Normalization Tools (ANTs) from UPenn:
 Arguments:  <input file> <output stem> <0 or 1 (relabel with XML)> <opt: XML>
 
 Example montage from (0-255) images: 
-python step1_make_montages.py ../data/subjects/1002/3/NIFTI/LPI/1002.nii.gz ../montages/1002 0
+python make_montages.py ../data/subjects/1013/3/NIFTI/1013_3_LPI.nii.gz ../montages/1013 0
 
 Example montage from labeled images:
-python step1_make_montages.py ../data/subjects/1002/3/NIFTI/LPI/1002_glm.nii.gz \
-       ../montages/1002_glm 1 \
-       ../data/subjects/1002/3/NIFTI/1002_3_glm_LabelMap.xml
+python make_montages.py ../data/subjects/1013/3/NIFTI/1013_3_glm_LPI.nii.gz \
+       ../montages/1013_glm 1 \
+       ../data/subjects/1013/3/NIFTI/1013_3_glm_LabelMap.xml
 
-(c) MIT license 2010, arno klein . arno@mindboggle.info
+(c) MIT license 2011, arno klein . arno@mindboggle.info
 """
 
 from sys        import argv
 from nibabel    import load
 from numpy      import shape, int, ceil, sqrt, zeros
-from pylab      import rot90, plt, cm
+from pylab      import rot90, flipud, plt, cm
 from scipy.misc import imsave
 
 # Input arguments
@@ -60,7 +60,7 @@ def montage(I):
         for i2 in range(nimages_x):
             xcount += 1
             if xcount < xdim:
-                Mx[ i1*zdim : (i1+1)*zdim, i2*ydim : (i2+1)*ydim ] = I[xdim-xcount,::-1,:].transpose()
+                Mx[ i1*zdim : (i1+1)*zdim, i2*ydim : (i2+1)*ydim ] = rot90(I[xdim-xcount,::-1,:],1)
             else:
                 break
 
@@ -70,7 +70,7 @@ def montage(I):
         for i2 in range(nimages_y):
             ycount += 1
             if ycount < ydim:
-                My[ i1*zdim : (i1+1)*zdim, i2*xdim : (i2+1)*xdim ] = I[::-1,ydim-ycount,:].transpose()
+                My[ i1*zdim : (i1+1)*zdim, i2*xdim : (i2+1)*xdim ] = flipud(I[::-1,ydim-ycount,:].transpose())
             else:
                 break
 
@@ -80,7 +80,7 @@ def montage(I):
         for i2 in range(nimages_z):
             zcount += 1
             if zcount < zdim:
-                Mz[ i1*ydim : (i1+1)*ydim, i2*xdim : (i2+1)*xdim ] = I[:,:,zdim-zcount].transpose()
+                Mz[ i1*ydim : (i1+1)*ydim, i2*xdim : (i2+1)*xdim ] = flipud(I[:,:,zdim-zcount].transpose())
             else:
                 break
 
@@ -152,6 +152,6 @@ Save images
    scipy.misc.toimage (http://www.scipy.org/Cookbook/Matplotlib/LoadImage)
 """
 #plt.gray()
-imsave(out_path + '_x' + '.png', rot90(Mx,2))
-imsave(out_path + '_y' + '.png', rot90(My,2))
+imsave(out_path + '_x' + '.png', Mx)
+imsave(out_path + '_y' + '.png', My)
 imsave(out_path + '_z' + '.png', rot90(Mz,2))

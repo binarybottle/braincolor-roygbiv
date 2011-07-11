@@ -12,9 +12,9 @@
   $montage_cor_main = '_y_2x.jpg';
   $labels_montage = 1;
   if ($labels_montage) {
-    $montage_labels_cor = '_glm_y.png';
-    $montage_labels_sag = '_glm_x.png';
-    $montage_labels_hor = '_glm_z.png';
+    $montage_labels_cor = '_glm_y_1x.png';
+    $montage_labels_sag = '_glm_x_1x.png';
+    $montage_labels_hor = '_glm_z_1x.png';
     $montage_labels_cor_main = '_glm_y_2x.png';
   }
 
@@ -38,15 +38,16 @@
   $offsetX        = $main_left - 1;
   $offsetY        = $main_top;
   $caption_height = 15;
-  $slider_top     = 60;
-  $slider_width   = 75;
+  //$slider_top     = -14;
+  //$slider_left    = 150;
+  //$slider_width   = 100;
 
   //----------//
   // MONTAGES //
   //----------//
   // image dimensions used to construct montages
   if (empty($ID)) { 
-    $ID = '1002';
+    $ID = '1013';
   }
   echo '<script type="text/javascript">var contour_path = "./contours/'.$ID.'/";</script>';
   $table_name = 'images'; 
@@ -56,12 +57,12 @@
     $xdim = $row->xdim;
     $ydim = $row->ydim;
     $zdim = $row->zdim;
-    $min_crop_x = $row->min_crop_x;
-    $min_crop_y = $row->min_crop_y;
-    $min_crop_z = $row->min_crop_z;
-    $max_crop_x = $row->max_crop_x;
-    $max_crop_y = $row->max_crop_y;
-    $max_crop_z = $row->max_crop_z;
+    //$min_crop_x = $row->min_crop_x;
+    //$min_crop_y = $row->min_crop_y;
+    //$min_crop_z = $row->min_crop_z;
+    //$max_crop_x = $row->max_crop_x;
+    //$max_crop_y = $row->max_crop_y;
+    //$max_crop_z = $row->max_crop_z;
     //$AC_x = round($row->AC_x);
     //$AC_y = round($row->AC_y);
     //$AC_z = round($row->AC_z);

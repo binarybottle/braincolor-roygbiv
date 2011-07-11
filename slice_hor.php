@@ -25,8 +25,10 @@
       <img id="images_hor" src="<?php echo $path_montages.$ID.$montage_hor; ?>">
       <?php 
        if ($labels_montage) {
+        echo '<span class="labels_hor">';
          echo '<img src="'.$path_montages.$ID.$montage_labels_hor.'" ';
          echo 'id="labels_hor" style="opacity:'.$opacity0.'">';
+        echo '</span>';
        }
       ?>
     </div>

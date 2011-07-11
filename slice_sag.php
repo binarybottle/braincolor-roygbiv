@@ -26,8 +26,10 @@
      <img id="images_sag" src="<?php echo $path_montages.$ID.$montage_sag; ?>">
      <?php 
       if ($labels_montage) {
+        echo '<span class="labels_sag">';
         echo '<img src="'.$path_montages.$ID.$montage_labels_sag.'" ';
         echo 'id="labels_sag" style="opacity:'.$opacity0.'">';
+        echo '</span>';
       }
      ?>
     </div>

@@ -1,6 +1,6 @@
 <?php
  include_once "../../db/roygbiv_db.php";
- $table_name = 'images'; 
+ $table_name = 'images';
 ?>
 
 <form method="post" action="<?php echo $PHP_SELF;?>">

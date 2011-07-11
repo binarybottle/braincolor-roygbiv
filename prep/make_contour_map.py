@@ -3,10 +3,9 @@ Extract label information and contour information from XML files
 and create arrays (map images) for image mouseover highlights.
 
 Example:
-python make_contour_map.py ../data/subjects/1002/3/NIFTI/1002_3_glm_LabelMap.xml \
-                           ../data/subjects/1002/3/otl/ ../contours/1002/ \
-                           ./contours/1002/labels.php 0 -20 0 1 512
-3.5 	44.5 	25 	138.5 	212.5 	224
+python make_contour_map.py ../data/subjects/1013/3/NIFTI/1013_3_glm_LabelMap.xml \
+                           ../data/subjects/1013/3/otl/ ../contours/1013/ \
+                           ./contours/1002/labels.php -2 -1 2 1 512
 
 Parse label XML file:
 
@@ -58,7 +57,7 @@ Demo from http://davidlynch.org/js/maphilight/docs/
  ...
 </map>
 
-(c) 2010 arno klein . arno@mindboggle.info . http://www.braincolor.org (MIT license)
+(c) 2011 arno klein . arno@mindboggle.info . http://www.braincolor.org (MIT license)
 """
 
 import os, sys

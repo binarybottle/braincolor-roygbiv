@@ -1,4 +1,4 @@
-<!-- (c) 2010 arno klein, MIT license 
+<!-- (c) 2011 arno klein, MIT license 
      arno@mindboggle.info
      http://www.braincolor.org
 -->
@@ -10,46 +10,51 @@ $ID      = $_GET['ID'];      // image file ID
 $cor0    = $_GET['cor0'];    // initial coronal slice
 $sag0    = $_GET['sag0'];    // initial sagittal slice
 $hor0    = $_GET['hor0'];    // initial horizontal slice
-$name    = $_GET['name'];    // form: name
-$email   = $_GET['email'];   // form: email address
-$admin   = $_GET['admin'];   // form: admin
-$comment = $_GET['comment']; // form: comment
+//$name    = $_GET['name'];    // form: name
+//$email   = $_GET['email'];   // form: email address
+//$admin   = $_GET['admin'];   // form: admin
+//$comment = $_GET['comment']; // form: comment
 
 include_once("../../db/roygbiv_db.php");
 include_once("../shared/metatags.php"); 
 include_once("./scriptlist.php");
 include("./settings.php");
 
-$test_jquery = 0;
-if ($test_jquery) {
-  //nx=12 ny=15 nz=13 xd=136 yd=200 zd=169
-  echo '<script type = "text/javascript">
-   $(document).ready(function() {
-     alert("sag0="+sag0+", cor0="+cor0+", hor0="+hor0+", nx="+nimages_x+", ny="+nimages_y+", nz="+nimages_z+", xd="+xdim+", yd="+ydim+", zd="+zdim);
-   }); 
-  </script>';
-}
 ?>
 
+<script type="text/javascript">
+// $(document).ready(function(){
+//  $('#page_effect').fadeIn(0);
+// });
+</script>
+
 </head>
+
 <body>
  
  <title>Roy G. Brain Image Viewer</title>
 
  <?php include_once("../shared/banner.php"); ?>
  
- <div class="intro_top">
-<br /><br /><br /><br /><br /><br /><br /><br />
- <font size="3pt"><font color="red">ROYBGIV is UNDER CONSTRUCTION on the week of February 16th. <br />
- Please excuse any inconveniences.</font></font><!--Help improve brain labels with the </font>
- <font size="3pt"><font color="red">R</font><font color="FF9900">O</font><font color="FFCC00">Y</font><font color="green">G</font> <font color="blue">B</font>rain <font color="6600FF">I</font>mage <font color="purple">V</font>iewer!</font-->
- <br />
- <!--span class="intro_text">
-  1. Select a brain image and set the label opacity.<br />
-  2. Click within the left 3 panels and move mouse over right panel to see text labels.<br />
-  3. Submit comments about these labels or the <a href="http://www.braincolor.org/protocols" onClick="return popup(this,'protocols')">label definitions</a>.
- </span-->
+ <div style="position:absolute; top:140px; left:30px;">
+  <font size="3pt" color="red">The ROY G. Brain Image Viewer will
+   present the first set of 20 labeled brains on July 18th...</font>
  </div>
+
+ <div style="position:absolute; top:180px; left:30px;">
+  <span style="font-size:80%;">
+  Move mouse over left panel to see text labels. &nbsp;&nbsp;
+  </span>
+ </div>
+
+ <div style="position:absolute; top:180px; left:548px;">
+  <span style="font-size:80%;">
+  Click within right panels to navigate through volume.
+  </span>
+ </div>
+
+ <div id="page_effect" style="display:none;">
+
  <div class="main" style="top:<?php echo $main_top; ?>px; left:<?php echo $main_left; ?>px;">
  
  <table border="0" cellspacing="0" cellpadding="0">
@@ -59,22 +64,21 @@ if ($test_jquery) {
      <!-- CORONAL main panel -->
      <?php include("slice_cor_main.php"); ?>
 
-     <!-- MENU and SLIDER -->
-     </br>
-     <table border="0" cellspacing="0" cellpadding="0">
+     <!-- MENU and LABEL BUTTON -->
+     <br />
+     <table>
       <tr>
-       <td valign="top" align="center">
-        <label for="opacity"></label>
-        <input type="text" id="opacity" style="border:0; font-size:9pt; width:50px; text-align:right"; /><font size="2">% label opacity:&nbsp;&nbsp;</font>
-       </td>
-       <td valign="middle" align="center">
-        <div class="slider" id="slider" style="color:#000000; width:<?php echo $slider_width; ?>px"></div>
-       </td>
-      </tr>
-      <tr>
-       <td align="center" colspan="2">
-        <br />
+       <td valign="top">
         <?php include("menu.php"); ?>
+       </td>
+       <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+       <td valign="top">
+        <button><span class="labels_button">Toggle labels OFF</span><span class="labels_button" style="display: none">Toggle labels ON</span></button>
+        <!--label for="opacity"></label>
+        <input type="text" id="opacity" style="border:0; font-size:9pt; width:50px; text-align:right"; />
+        <font size="2">% label opacity:&nbsp;&nbsp;</font>
+        <div class="slider" id="slider" style="color:#000000; width:<?php //echo $slider_width; ?>px; 
+         top:<?php //echo $slider_top; ?>px; left:<?php //echo $slider_left; ?>px;"></div-->
        </td>
       </tr>
      </table>
@@ -85,7 +89,7 @@ if ($test_jquery) {
      <tr>
       <td align="left" style="vertical-align:top">
 
-       <!-- CORONAL -->    
+       <!-- CORONAL -->
        <?php include("slice_cor.php"); ?>
 
       </td><td style="vertical-align:top">
@@ -101,15 +105,14 @@ if ($test_jquery) {
        <!-- HORIZONTAL -->
        <?php include("slice_hor.php"); ?>
 
-      </td><td style="vertical-align:top;" align="left">
-
+      </td>
+      <!--td style="vertical-align:top;" align="left"-->
        <!-- COMMENT FORM -->
        <?php //include_once("form_in.php"); ?>
-
        <!-- SEND MAIL, INSERT into DATABASE -->
-       <?php include_once("form_out.php"); ?>
+       <?php //include_once("form_out.php"); ?>
+      <!--/td-->
 
-      </td>
      </tr>
     </table>
    </td>
@@ -120,6 +123,7 @@ if ($test_jquery) {
  <br />
  <div id="label_names"></div>
 
+ </div>
  </div>
 </body>
 </html>
