@@ -15,8 +15,8 @@ $hor0    = $_GET['hor0'];    // initial horizontal slice
 //$admin   = $_GET['admin'];   // form: admin
 //$comment = $_GET['comment']; // form: comment
 
-include_once("../../db/roygbiv_db.php");
-include_once("../shared/metatags.php"); 
+include_once("../../../db/roygbiv_db.php");
+include_once("./shared/metatags.php"); 
 include_once("./scriptlist.php");
 include("./settings.php");
 
@@ -34,7 +34,7 @@ include("./settings.php");
  
  <title>Roy G. Brain Image Viewer</title>
 
- <?php include_once("../shared/banner.php"); ?>
+ <?php include_once("./shared/banner.php"); ?>
  
  <div style="position:absolute; top:140px; left:30px;">
   <font size="3pt" color="red">The ROY G. Brain Image Viewer will
