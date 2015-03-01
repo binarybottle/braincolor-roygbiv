@@ -36,11 +36,6 @@ include("./settings.php");
 
  <?php include_once("./shared/banner.php"); ?>
  
- <div style="position:absolute; top:140px; left:30px;">
-  <font size="3pt" color="red">The ROY G. Brain Image Viewer will
-   present the first set of 20 labeled brains on July 18th...</font>
- </div>
-
  <div style="position:absolute; top:180px; left:30px;">
   <span style="font-size:80%;">
   Move mouse over left panel to see text labels. &nbsp;&nbsp;
